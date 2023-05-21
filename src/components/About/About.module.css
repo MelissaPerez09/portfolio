@@ -1,0 +1,49 @@
+.about{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.texts{
+    width: 90%;
+}
+
+.subtitle{
+    margin-left: 3%;
+    display: flex;
+    height: 100px;
+    transition-property: transform;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+}
+
+.subtitle:is(:hover, :focus) {
+    transform: translateY(-8px);
+    color: #8E958F;
+}
+
+.saturn{
+    width: auto;
+    height: auto;
+    
+}
+
+.aboutme{
+    font-family: 'Source Code Pro';
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.description{
+    margin-left: 10%;
+    font-family: 'Poppins';
+}
+
+.link{
+    color: #8E958F;
+}
+
+.pic{
+    margin: 20px;
+    height: 200px;
+}

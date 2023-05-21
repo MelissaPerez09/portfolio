@@ -1,0 +1,40 @@
+.intro{
+    height: 200px;
+    margin-top: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.subspace{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+}
+
+.spaceship{
+    width: auto;
+    height: auto;
+}
+
+.title{
+    display: flex;
+}
+
+.letter {
+    font-family: 'Source Code Pro';
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: transform;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+}
+  
+.letter:is(:hover, :focus) {
+    transform: translateY(-8px);
+    color: #CEA03E;
+}
