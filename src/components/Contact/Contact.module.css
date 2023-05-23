@@ -1,0 +1,27 @@
+.fixed{
+    height: 40px;
+    margin: 10px;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    justify-content: right;
+}
+
+.card{
+    padding: 5px;
+}
+
+.goto{
+    margin: 2px;
+    height: 40px;
+    transition-property: transform;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+}
+
+.goto:is(:hover, :focus) {
+    transform: translateY(-8px);
+    color: #8E958F;
+}

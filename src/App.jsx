@@ -1,13 +1,15 @@
 import { useEffect } from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import Routes from './components/Routes'
+import Header from './components/Header/Header'
+import Contact from './components/Contact/Contact'
 
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes />
+        <Header />
+        <Contact />
       </BrowserRouter>
     </div>
   )

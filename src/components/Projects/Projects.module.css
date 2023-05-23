@@ -31,7 +31,6 @@
 
 .onebyone{
     border-radius: 10px;
-    height: 550px;
     background-color: #F4F3E8;
     margin-top: 30px;
     margin-left: 10%;
@@ -77,5 +76,9 @@
 p{
     font-family: 'Poppins';
     padding: 5px;
+}
+
+.link{
+    color: #8E958F;
 }
   
