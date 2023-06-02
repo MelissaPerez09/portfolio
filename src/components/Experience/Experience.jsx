@@ -43,6 +43,16 @@ function Experience(){
                     <img className={styles.tech} alt="eslint icon" src="/eslint.png"/>
                     <p>Eslint</p>
                 </div>
+
+                <div className={styles.card}>
+                    <img className={styles.tech} alt="storybook icon" src="/storybook.png"/>
+                    <p>Storybook</p>
+                </div>
+
+                <div className={styles.card}>
+                    <img className={styles.tech} alt="material ui icon" src="/materialui.png"/>
+                    <p>Material UI</p>
+                </div>
             </div>
         </div>
     )

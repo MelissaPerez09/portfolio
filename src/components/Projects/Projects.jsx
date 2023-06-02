@@ -5,11 +5,15 @@ function Projects() {
   const [selectedImage, setSelectedImage] = useState("");
   const [displayText, setDisplayText] = useState("");
   const [linkUrl, setLinkUrl] = useState("");
+  const [techs, setTechs] = useState("");
+  const [techsImages, setTechsImages] = useState("");
 
-  const handleButtonClick = (imageName, text, url) => {
+  const handleButtonClick = (imageName, text, url, text2, images) => {
     setSelectedImage(imageName);
     setDisplayText(text);
     setLinkUrl(url);
+    setTechs(text2)
+    setTechsImages(images)
   };
 
   const renderProjectDetails = () => {
@@ -29,6 +33,13 @@ function Projects() {
               </a>
             )}
           </p>
+          {techs && <p>{techs}</p>}
+
+          <img
+            src={techsImages}
+            alt="technologies image"
+            className={styles.techImages}
+          />
         </div>
       );
     } else {
@@ -45,17 +56,33 @@ function Projects() {
 
       <div className={styles.onebyone}>
         <div className={styles.buttons}>
+        <button
+            className={styles.button}
+            onClick={() =>
+              handleButtonClick(
+                "/designCrafter.png",
+                "Design crafter web page replication.",
+                "https://design-crafter.netlify.app/",
+                "Technologies I used:",
+                "/techs1.png"
+              )
+            }
+          >
+            Web page replication
+          </button>
           <button
             className={styles.button}
             onClick={() =>
               handleButtonClick(
                 "/dataBase.png",
                 "Data base project, about hospitals.",
-                "https://jdgomez2002.github.io/Proj2_DBI/"
+                "https://jdgomez2002.github.io/Proj2_DBI/",
+                "Technologies I used:",
+                "/techs2.png"
               )
             }
           >
-            Data base project
+            Hospitals project
           </button>
           <button
             className={styles.button}
@@ -63,23 +90,28 @@ function Projects() {
               handleButtonClick(
                 "/memoryGame.png",
                 "My first time using React, want to play?",
-                "https://uvgenios.online/21385/lab06/index.html"
+                "https://uvgenios.online/21385/lab06/index.html",
+                "Technologies I used:",
+                "/techs3.png"
               )
             }
           >
-            React memory game
+            Memory game
           </button>
+
           <button
             className={styles.button}
             onClick={() =>
               handleButtonClick(
-                "/designCrafter.png",
-                "Design crafter web page replication.",
-                "https://design-crafter.netlify.app/"
+                "/calculator.png",
+                "Display calculator",
+                "https://melissa-calculator.netlify.app/",
+                "Technologies I used:",
+                "/techs4.png"
               )
             }
           >
-            Web page replication
+            Calculator
           </button>
         </div>
 
