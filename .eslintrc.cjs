@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'plugin:prettier/recommended'
   ],
   overrides: [
   ],
@@ -15,7 +16,18 @@ module.exports = {
   },
   plugins: [
     'react',
+    'prettier'
   ],
   rules: {
+    "prettier/prettier": ["warn"],
+    "semi": ["error", "never"],
+    "max-len": ["warn", {
+      "code": 120
+    }],
+    "prettier/prettier": ["warn", {
+      "semi": false,
+      "tabWidth": 4,
+      'endOfLine': 'auto'
+    }]
   },
 };

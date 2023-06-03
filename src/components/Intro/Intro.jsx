@@ -1,11 +1,10 @@
 import React from "react"
 import styles from "./Intro.module.css"
 
-function Intro(){
-
-    return(
+function Intro() {
+    return (
         <div className={styles.intro}>
-            <img className={styles.ship} alt="spaceship" src="/spaceship.png"/>
+            <img className={styles.ship} alt="spaceship" src="/spaceship.png" />
 
             <div className={styles.title}>
                 <div className={styles.letter}>m</div>
@@ -23,7 +22,6 @@ function Intro(){
             </div>
         </div>
     )
-
 }
 
 export default Intro
